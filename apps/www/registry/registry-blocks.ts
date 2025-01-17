@@ -567,4 +567,25 @@ export const blocks: Registry["items"] = [
     ],
     categories: ["authentication", "login"],
   },
+  {
+    name: "hero-01",
+    author: "shadcn (https://ui.shadcn.com)",
+    title: "Dashboard",
+    description: "A simple dashboard with a hello world component.",
+    type: "registry:block",
+    registryDependencies: ["input", "button", "card"],
+    dependencies: ["zod"],
+    files: [
+      {
+        path: "blocks/hero-01/page.tsx",
+        type: "registry:page",
+        target: "app/hero-01/page.tsx",
+      },
+      {
+        path: "blocks/dashboard-01/components/hello-world.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["dashboard"],
+  },
 ]
